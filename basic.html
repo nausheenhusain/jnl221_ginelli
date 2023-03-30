@@ -1,0 +1,150 @@
+<!-- Complete this worksheet in html and css. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on html tags and css. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+        
+        p {
+            color: #5A5A5A;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
+        #quote {
+            color: gray;
+            font-style: italic;
+        }
+        .book {
+            width:275px;
+            border:solid lightskyblue 2px;
+        }
+
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #longest {
+            width: 160px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #longer {
+            width:130px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #long {
+            width: 100px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+
+        </style>
+    </head>
+    
+    <body>
+
+    <h1>A little bit about me!</h1>
+    
+    <h2>My intro</h2>
+    <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
+    <!-- Tags to use: <p>, <strong>, <i> -->
+    <p>My name is <strong>Anna Ginelli</strong>. I am from <strong>Malvern, Pennsylvania</strong>, which is right outside of Philadelphia. I live with my <i>Mom</i>, <i>Dad</i>, brother <i>Nick</i>, sister <i>Nina</i>, and brother <i>Anthony</i>. I am the <strong>oldest</strong>. I love to hang out with my family and friends, spend time outdoors, and travel. I am a <strong> sophomore honors student studying Magazine, News and Digital Journalism and Political Science</strong>.</p> 
+
+
+    <h2>My handles</h2>
+    <!-- Include: at least two handles for your social media accounts -->
+    <!-- Tags to use: <p>, <a> -->
+    <p>My Instagram handle is <a href="https://www.instagram.com/annagginelli/?hl=en" target="_blank">@annagginelli</a> and my Twitter handle is <a href="https://twitter.com/AnnaGinelli" target="_blank">@AnnaGinelli</a>.</p>
+
+    
+    <h2> ~ Challenge: Why is my text maroon? ~</h2>
+    <!-- Challenge! The text in your p tags is currently maroon. Figure out why and make it dark gray, using a hex code. (Hint: use google to find a hex code for a dark gray) When you're done, change the text in the <p> tag below to "My text is gray." -->
+    <p>My text is gray.</p>
+
+
+    <h2>My favorite meme</h2>
+    <!-- Include: "large_wink.png" as an image -->
+    <!-- Tags to use: <img> -->
+    <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+    <img src="large_wink.png" alt="an image of a photograph of Kathryn Hahn winking" height="300px" width="400px">
+    
+    <h2>Why I'm a great student</h2>
+    <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+    <!-- Tags to use: <ul>, <li>, <strong> -->
+    <ul>
+        <li>I am very <strong>ambitious</strong></li>
+        <li>I love to <strong>learn</strong></li>
+        <li>I am a <strong> hard worker</strong></li>
+    </ul>
+
+    
+    <h2>Top 3 most famous people from my hometown</h2>
+    <!-- Include: an ordered list -->
+    <!-- Tags to use: <ol>, <li>, <a> -->
+    <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Adam_McKay" target="_blank">Adam McKay</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Mikal_Bridges">Mikal Bridges</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Phil_Gosselin">Phil Gosselin</a></li>
+    </ol>
+
+    <h2> ~ Challenge: Read my poetry ~</h2>
+    <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
+    <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
+    <p>College, oh college, a place of great wonder,<br>
+    Where the mind expands and the heart grows fonder,<br>
+    Of learning and knowledge, of books and of thought,<br>
+    Of friendships and memories that can't be bought.<br>
+    <br>
+    From the first day on campus, with nerves on high,<br>
+    To the last final exam, with a sigh and a sigh,<br>
+    We're challenged and tested in every way,<br>
+    But we emerge stronger, with skills to display.<br>
+    </p>
+
+    
+    <h2>This is one of my favorite quotes</h2>
+    <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+    <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+    <p id="quote">"Anything worth dying for is certainly worth living for"</em></p> 
+    </div>
+    <h3>Joseph Heller, <i>Catch-22</i></h3>
+
+    <h2>These are more of my favorite books</h2>
+    <!-- Include: an unordered list of at least three books, list items should have a border -->
+    <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+    <ul class="book">
+        <li><i>Hamlet</i> by William Shakespeare
+        <li><i>The Book Thief</i> by Markus Zusak
+        <li><i>When You Reach Me</i> by Rebecca Stead
+    </ul>
+
+
+    <h3>~ Challenge: A very simple bar graph ~</h3>
+    <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+    <div id="bargraph">
+        <h4>How Tired I Have Been The Past Three Days</h4>
+        <p class="bar_label">Thursday</p>
+        <div id="longest"></div>
+        <p class="bar_label">Wednesday</p>
+        <div id="longer"></div>
+        <p class="bar_label">Tuesday</p>
+        <div id="long"></div>
+    </div>
+     
+    </body>
+</html>
